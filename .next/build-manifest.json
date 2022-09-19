@@ -25,10 +25,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/profile/messages": [
+    "/profile/realty/property": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/profile/messages.js"
+      "static/chunks/pages/profile/realty/property.js"
     ]
   },
   "ampFirstPages": []
