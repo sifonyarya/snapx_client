@@ -1,0 +1,28 @@
+import tw from 'twin.macro';
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
+import ProfileBlockLeft from '../components/ProfileBlockLeft/ProfileBlockLeft';
+import MenuProfileMobile from '../components/MenuProfileMobile/MenuProfileMobile';
+
+
+interface Children {}
+
+const ProfileContainers: React.FC<Children> = ({children}:any) => {
+    return (
+        <>
+        <Header />
+        <Container>
+            <ProfileBlockLeft />
+            <MenuProfileMobile/>
+            <RightBlock>
+               {children}
+            </RightBlock>
+        </Container>
+        <Footer/>
+        </>
+    )
+}
+export default ProfileContainers;
+
+const Container = tw.div`pt-[10px] lg:pt-[20px] lg:w-[1200px] block lg:flex lg:mx-auto min-h-[83vh] mx-[20px] justify-between`
+const RightBlock = tw.div`w-full lg:w-[78%] shadow-md bg-white p-[15px] rounded-[10px] min-h-[50px] max-h-[500px]`
