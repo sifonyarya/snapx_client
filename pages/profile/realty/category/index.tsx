@@ -25,7 +25,6 @@ const CategoryRealty: NextPage = () => {
             </div>
             </>
             )}
-            <p>geyuwtryuewg</p>
         </ProfileContainers>
         </>
 
