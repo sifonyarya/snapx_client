@@ -18,4 +18,4 @@ const MainComponents: React.FC<Children> = ({children}:any) => {
 }
 export default MainComponents;
 
-const Container = tw.div`lg:w-[1200px] lg:mx-auto min-h-[83vh] mx-[20px]`
+const Container = tw.div`lg:w-[1316px] lg:mx-auto min-h-[83vh] mx-[20px]`

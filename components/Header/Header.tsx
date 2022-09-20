@@ -106,7 +106,7 @@ export default observer(Header);
 
 
 const HeaderBlock = tw.header`fixed w-full mt-[-80px] block bg-white py-[10px] shadow-[0 2px 12px -4px rgba(0,0,0,0.5)]`
-const Container = tw.div`flex lg:w-[1200px] w-auto lg:mx-auto mx-[20px]`
+const Container = tw.div`flex lg:w-[1316px] w-auto lg:mx-auto mx-[20px]`
 const LinkHome = tw.a`cursor-pointer block lg:w-[120px] w-[120px] mt-[6px]`
 const OpenMenu = tw.button`lg:hidden block ml-auto bg-transparent border-none px-2 pt-1 rounded-lg mr-[-7px]`
 const BlockRight = tw.div`ml-auto flex`
