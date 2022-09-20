@@ -55,26 +55,6 @@ const ProfileBlockLeft: React.FC = () => {
                         <LinkButton style={router.pathname == `/profile/users/roles` ? { backgroundColor: '#f23132', color: 'white', boxShadow: 'var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)' } : {}}>Роли пользователей</LinkButton>
                     </Link>
                 </Item>
-                <Item>
-                    <Link href="/profile/realty">
-                        <LinkButton style={router.pathname == `/profile/realty` ? { backgroundColor: '#f23132', color: 'white', boxShadow: 'var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)' } : {}}>Настройки недвижимости</LinkButton>
-                    </Link>
-                </Item>
-                <Item>
-                    <Link href="/profile/realty/property">
-                        <LinkButton style={router.pathname == `/profile/realty/property` ? { backgroundColor: '#f23132', color: 'white', boxShadow: 'var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)' } : {}}>Тип недвижимости</LinkButton>
-                    </Link>
-                </Item>
-                <Item>
-                    <Link href="/profile/realty/category">
-                        <LinkButton style={router.pathname == `/profile/realty/category` ? { backgroundColor: '#f23132', color: 'white', boxShadow: 'var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)' } : {}}>Категории</LinkButton>
-                    </Link>
-                </Item>
-                <Item>
-                    <Link href="/profile/realty/rooms">
-                        <LinkButton style={router.pathname == `/profile/realty/rooms` ? { backgroundColor: '#f23132', color: 'white', boxShadow: 'var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)' } : {}}>Комнаты</LinkButton>
-                    </Link>
-                </Item>
             </Menu>
         </ProfileBlock>
     )
