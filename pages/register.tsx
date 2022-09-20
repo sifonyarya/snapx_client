@@ -31,7 +31,7 @@ const RegisterPage: NextPage = () => {
             value={user_password}
             onChange={(e:any) => setPassword(e.target.value)}
             />
-            <button onClick={() => store.register(user_email, user_password)}>Войти</button>
+            <button onClick={() => store.register(user_email, user_password)}>Регистрация</button>
         </MainComponents>
         </>
     )
