@@ -4,18 +4,11 @@ import Head from 'next/head';
 import { useEffect, useState } from 'react';
 import ProfileContainers from '../../../containers/ProfileContainers';
 import { API_URL } from '../../api/config';
-
+import Card_Realty_Profile from '../../../components/Card_Realty_Profile/Card_Realty_Profile';
 
 
 const RealtySetting: NextPage = () => {
     const [realty, setRealty] = useState<any[]>([]);
-    const deleteQ = async (id:any) => {
-        const res = await fetch(API_URL + `/realty/` + id, {
-            method: 'DELETE',
-            headers: { 'Accept': 'application/json', 'Content-Type': 'application/json', }
-        });
-        window.location.reload();
-    }
     useEffect(() => {
         axios.get(API_URL + '/realty')
             .then((response: AxiosResponse) => {
@@ -27,10 +20,7 @@ const RealtySetting: NextPage = () => {
         <Head><title>Настройка недвижимости</title></Head>
         <ProfileContainers>
          {realty.map(item=>
-        <div key={item.id}>
-            <p>{item.email}</p>
-            <button onClick={() => deleteQ(item.id)}>Удалить</button>
-        </div>
+         <Card_Realty_Profile realty={item} />
         )}
         </ProfileContainers>
         </>
