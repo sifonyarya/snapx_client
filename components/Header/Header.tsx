@@ -55,6 +55,9 @@ const Header: React.FC = () => {
                                 <Link href="/login">
                                    <a>Войти</a>
                                 </Link>
+                                <Link href="/register">
+                                   <a>Регистрация</a>
+                                </Link>
                             </BlockRight>
                         </>
                         :

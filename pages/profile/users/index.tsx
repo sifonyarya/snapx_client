@@ -8,9 +8,6 @@ import { API_URL } from '../../api/config';
 
 
 
-
-
-
 const UsersSettings: NextPage = () => {
     const [users, setUsers] = useState<any[]>([]);
     useEffect(() => {
