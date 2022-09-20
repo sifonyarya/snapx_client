@@ -20,10 +20,10 @@ const Card_Realty_Profile: React.FC<Props> = ({realty}:any) => {
     }
     return (
         <>
-        <div key={realty.id}>
+        <a href={`/profile/realty/${realty.id}`} key={realty.id}>
             <p>{realty.email}</p>
             <button onClick={() => deleteQ(realty.id)}>Удалить</button>
-        </div>
+        </a>
         </>
     )
 }
