@@ -26,6 +26,10 @@ const LoginPage: NextPage = () => {
         <>
         <Head><title>Авторизации</title></Head>
         <MainComponents>
+            <br />
+            <br />
+            <br />
+            <br />
             Вход на страницу
             <Input
             id="user_email"
