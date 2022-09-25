@@ -14,10 +14,13 @@ interface Props {
 const CardUserProfile: React.FC<Props> = ({ users }: any) => {
     return (
         <>
-            <a href={`/profile/users/${users.id}`} key={users.id}>
+            <Card href={`/profile/users/${users.id}`} key={users.id}>
                 <p>{users.email}</p>
-            </a>
+            </Card>
         </>
     )
 }
 export default CardUserProfile;
+
+
+const Card = tw.a`rounded-[5px] p-[15px] border-[1px] border-solid border-[#d6d6d6] mb-[5px] cursor-pointer`
