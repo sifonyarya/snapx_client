@@ -1,13 +1,17 @@
-import { useContext, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import Image from "next/image";
 import tw from 'twin.macro';
 import Link from "next/link";
 import Avatar from '../../public/pictures/avatar.png'
 import { Context } from "../../pages/_app";
+import axios, { AxiosResponse } from "axios";
+import { API_URL } from "../../pages/api/config";
 
 
 
 const LoginProfileHeader: React.FC = () => {
+    const [fullname, setFullName] = useState();
+    const [surname, setSurName] = useState();
     const [Prof, setProf] = useState(false)
     const { store } = useContext(Context);
     const handleMouseEnter = (e:any) => {
@@ -16,6 +20,13 @@ const LoginProfileHeader: React.FC = () => {
       const handleMouseLeave = (e:any) => {
         setProf(false)
       }
+      useEffect(() => {
+        axios.get(API_URL + '/users/' + localStorage.getItem('user_id'))
+            .then((response: AxiosResponse) => {
+                setFullName(response.data.fullname);
+                setSurName(response.data.surname);
+            });
+      }, [])
     return (
         <>
         <Profile
@@ -28,7 +39,7 @@ const LoginProfileHeader: React.FC = () => {
         onMouseLeave={handleMouseLeave}>
             <ContainerProfile>
                     <Link href="/profile">
-                        <NameProfile>Владислав Сафатов</NameProfile>
+                        <NameProfile>{fullname} {surname}</NameProfile>
                     </Link>
                 <Line />
                 <Menu>
