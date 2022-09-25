@@ -11,12 +11,12 @@ interface Props {
 }
 
 
-const CardUserProfile: React.FC<Props> = ({users}: any) => {
+const CardUserProfile: React.FC<Props> = ({ users }: any) => {
     return (
         <>
-        <div key={users.id}>
-              <p>{users.email}</p>
-          </div>  
+            <a href={`/profile/users/${users.id}`} key={users.id}>
+                <p>{users.email}</p>
+            </a>
         </>
     )
 }
