@@ -27,6 +27,7 @@ const OneUserProfile: NextPage = ({user}:any) => {
         });
         window.location.reload();
     }
+    
     return (
         <>
         <Head><title>Отдельный пользователь</title></Head>
