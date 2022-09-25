@@ -25,7 +25,9 @@ const RoleUser: NextPage = ({role}:any) => {
         <ProfileContainers>
             {users.map(item =>
             <div key={item.id}>
-                <p>{item.role_id}</p>
+                {role.id == item.role_id &&
+                <p>{item.email}</p>
+                }
             </div>
             )}
         </ProfileContainers>
