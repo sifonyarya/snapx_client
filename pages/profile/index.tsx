@@ -47,11 +47,11 @@ export default observer(ProfilePage);
 
 
 export async function getServerSideProps() {
-  const [id, setID] = useState();
+  const [id, setID] = useState([]);
   useEffect(() => {
     localStorage.getItem('user_id')
-  }, [setID])
-  const users = await fetch(API_URL + `/users/` + id)
+  }, [id]);
+  const users = await fetch(API_URL + `/users/` + setID)
   const user = await users.json()
   return {
     props: { user }
