@@ -16,25 +16,20 @@ import axios from 'axios';
 const OneUserProfile: NextPage = ({user}:any) => {
     const [fullname, setFullname] = useState(user.fullname);
     const [surname, setSurname] = useState(user.surname);
+
     
-    const Update = (e:any) => {
-    e.preventDefault();
-    const formData = new FormData();
-    formData.append("id", user.id);
-    formData.append("fullname", fullname);
-    formData.append("surname", surname);
-    formData.append("email", user.email);
-    formData.append("timestamp", user.timestamp);
-    formData.append("password", user.password);
-    const config = {
-        headers: {
-            'content-type': 'multipart/form-data'
-        } 
+    const Update = async () => {
+        axios.put(API_URL + '/users/' + user.id , {
+            id: user.id,
+            fullname: fullname,
+            surname: surname,
+            email: user.email,
+            timestamp: user.timestamp,
+            password: user.password
+        });
+        window.location.reload();
     }
-    const url = API_URL + '/users/' + user.id;
-      axios.put(url,formData, config)
-    }
-    
+
     return (
         <>
         <Head><title>Отдельный пользователь</title></Head>
