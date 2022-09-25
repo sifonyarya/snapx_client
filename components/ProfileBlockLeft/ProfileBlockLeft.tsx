@@ -10,6 +10,11 @@ const ProfileBlockLeft: React.FC = () => {
         <ProfileBlock>
             <Menu>
                 <Item>
+                    <Link href="/profile">
+                        <LinkButton style={router.pathname == `/profile` ? { backgroundColor: '#f23132', color: 'white', boxShadow: 'var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)' } : {}}>Профиль</LinkButton>
+                    </Link>
+                </Item>
+                <Item>
                     <Link href="/profile/ads">
                         <LinkButton style={router.pathname == `/profile/ads` || router.pathname == `/profile/ads/create` ? { backgroundColor: '#f23132', color: 'white', boxShadow: 'var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)' } : {}}>Мои объявления</LinkButton>
                     </Link>

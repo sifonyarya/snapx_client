@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import Head from 'next/head';
 import { useContext, useEffect } from "react";
-import MainComponents from "../../containers/MainComponents";
+import ProfileContainers from "../../containers/ProfileContainers";
 import { Context } from "../_app";
 import { observer } from "mobx-react-lite";
 import { useRouter } from "next/router";
@@ -22,10 +22,10 @@ const ProfilePage: NextPage = () => {
     return (
         <>
         <Head><title>Личный кабинет пользователя</title></Head>
-        <MainComponents>
+        <ProfileContainers>
         Личный кабинет пользователя
         <button onClick={() => store.logout()}>Выйти</button>
-        </MainComponents>
+        </ProfileContainers>
         </>
     )
 }

@@ -25,11 +25,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/catalog/apartments": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/catalog/apartments.js"
-    ],
     "/profile/users": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
