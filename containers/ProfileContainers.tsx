@@ -3,11 +3,24 @@ import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 import ProfileBlockLeft from '../components/ProfileBlockLeft/ProfileBlockLeft';
 import MenuProfileMobile from '../components/MenuProfileMobile/MenuProfileMobile';
+import { useRouter } from 'next/router';
+import { useContext, useEffect } from 'react';
+import { Context } from '../pages/_app';
 
 
 interface Children {}
 
 const ProfileContainers: React.FC<Children> = ({children}:any) => {
+    const { store } = useContext(Context);
+    const router = useRouter();
+    useEffect(() => {
+      setTimeout(() => {
+        if (store.isAuth == false) {
+          router.push('/login');
+        }
+        }, 100);
+    }),
+      [];
     return (
         <>
         <Header />

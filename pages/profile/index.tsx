@@ -10,15 +10,6 @@ import { useRouter } from "next/router";
 
 const ProfilePage: NextPage = () => {
   const { store } = useContext(Context);
-  const router = useRouter();
-    useEffect(() => {
-      setTimeout(() => {
-        if (store.isAuth == false) {
-          router.push('/login');
-        }
-        }, 100);
-    }),
-      [];
     return (
         <>
         <Head><title>Личный кабинет пользователя</title></Head>
