@@ -48,6 +48,13 @@ const OneUserProfile: NextPage = ({user}:any) => {
             placeholder="Введите ваше имя"
             onChange={(e: any) => setFullname(e.target.value)} 
             />
+            <input 
+            type="text" 
+            name="surname" 
+            value={surname || ''} 
+            placeholder="Введите ваше имя"
+            onChange={(e: any) => setSurname(e.target.value)} 
+            />
             <button onClick={Update}>Сохранить</button>
         </ProfileContainers>
         </>
