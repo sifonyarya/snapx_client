@@ -35,4 +35,4 @@ export async function getServerSideProps({ params }:any) {
     }
   };
 
-const Back = tw.a`border-[1px] border-solid px-[25px] py-[5px] cursor-pointer rounded-[3px] text-[14px] border-[#d6d6d6] text-[#505050] font-medium hover:text-white hover:bg-[#f23132] hover:border-[#f23132] duration-200 hover:duration-200`
+const Back = tw.a`border-[1px] border-solid px-[25px] py-[5px] cursor-pointer rounded-[5px] text-[14px] border-[#d6d6d6] text-[#505050] font-medium hover:text-white hover:bg-[#f23132] hover:border-[#f23132] duration-200 hover:duration-200`
