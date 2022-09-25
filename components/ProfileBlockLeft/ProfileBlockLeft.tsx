@@ -41,11 +41,6 @@ const ProfileBlockLeft: React.FC = () => {
                     </Link>
                 </Item>
                 <Item>
-                    <Link href="/profile/gender">
-                        <LinkButton style={router.pathname == `/profile/gender` ? { backgroundColor: '#f23132', color: 'white', boxShadow: 'var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)' } : {}}>Пол пользователей</LinkButton>
-                    </Link>
-                </Item>
-                <Item>
                     <Link href="/profile/users">
                         <LinkButton style={router.pathname == `/profile/users` || router.pathname == `/profile/users/[id]`? { backgroundColor: '#f23132', color: 'white', boxShadow: 'var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)' } : {}}>Все пользователи</LinkButton>
                     </Link>
