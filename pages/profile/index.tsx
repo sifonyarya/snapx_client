@@ -46,13 +46,11 @@ const ProfilePage: NextPage = ({user}:any) => {
 export default observer(ProfilePage);
 
 
-  useEffect(() => {
-   async function getServerSideProps() {
-    const id = localStorage.getItem('user_id')
-    const users = await fetch(API_URL + `/users/` + id)
-    const user = await users.json()
-    return {
-      props: { user }
-    }
+export async function getServerSideProps() {
+  const id = localStorage.getItem('user_id')
+  const users = await fetch(API_URL + `/users/` + id)
+  const user = await users.json()
+  return {
+    props: { user }
   }
-  }, [])
+};
