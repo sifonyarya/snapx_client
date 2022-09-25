@@ -12,7 +12,7 @@ import { API_URL } from "../../../api/config";
 const RolesSettings: NextPage = () => {
     const [roles, setRoles] = useState<any[]>([]);
     useEffect(() => {
-        axios.get(API_URL + '/roles')
+        axios.get(API_URL + '/role')
             .then((response: AxiosResponse) => {
                 setRoles(response.data);
             });
