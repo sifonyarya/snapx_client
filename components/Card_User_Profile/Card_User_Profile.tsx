@@ -23,4 +23,4 @@ const CardUserProfile: React.FC<Props> = ({ users }: any) => {
 export default CardUserProfile;
 
 
-const Card = tw.a`rounded-[5px] p-[15px] border-[1px] border-solid border-[#d6d6d6] mb-[5px] cursor-pointer`
+const Card = tw.a`block rounded-[5px] p-[15px] border-[1px] border-solid border-[#d6d6d6] mb-[5px] cursor-pointer`
