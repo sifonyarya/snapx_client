@@ -32,7 +32,7 @@ const OneUserProfile: NextPage = ({user}:any) => {
         });
         setTimeout(() => {
             window.location.reload();
-        }, 1000);
+        }, 500);
     }
 
     return (
