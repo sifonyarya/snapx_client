@@ -35,4 +35,4 @@ export async function getServerSideProps({ params }:any) {
     }
   };
 
-const Back = tw.a``
+const Back = tw.a`border-[1px] border-solid px-[10px] py-[2px]`
