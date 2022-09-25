@@ -31,7 +31,6 @@ const OneUserProfile: NextPage = ({user}:any) => {
             password: user.password
         });
     }
-
     return (
         <>
         <Head><title>Отдельный пользователь</title></Head>
