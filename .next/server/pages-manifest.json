@@ -2,5 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/catalog/apartments": "pages/catalog/apartments.js"
+  "/catalog/apartments": "pages/catalog/apartments.js",
+  "/profile/users": "pages/profile/users.js",
+  "/404": "pages/404.js"
 }

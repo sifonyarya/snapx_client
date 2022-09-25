@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import axios, { AxiosResponse } from 'axios';
 import { NextPage } from 'next';
 import Head from 'next/head';

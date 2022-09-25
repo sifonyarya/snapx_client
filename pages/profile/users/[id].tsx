@@ -16,6 +16,8 @@ import axios from 'axios';
 const OneUserProfile: NextPage = ({user}:any) => {
     const [fullname, setFullname] = useState(user.fullname);
     const [surname, setSurname] = useState(user.surname);
+
+    
     const Update = async () => {
         axios.put(API_URL + '/users/' + user.id , {
             id: user.id,
@@ -27,7 +29,7 @@ const OneUserProfile: NextPage = ({user}:any) => {
         });
         window.location.reload();
     }
-    
+
     return (
         <>
         <Head><title>Отдельный пользователь</title></Head>
