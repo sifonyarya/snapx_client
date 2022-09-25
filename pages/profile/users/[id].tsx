@@ -16,8 +16,8 @@ import axios from 'axios';
 const OneUserProfile: NextPage = ({user}:any) => {
     const [fullname, setFullname] = useState(user.fullname);
     const [surname, setSurname] = useState(user.surname);
-    const [role, setRole] = useState(user.role_id);
-    const [gender, setGender] = useState(user.gender_id);
+    const [role_id, setRole] = useState(user.role_id);
+    const [gender_id, setGender] = useState(user.gender_id);
 
     const Update = async () => {
         axios.put(API_URL + '/users/' + user.id , {
@@ -25,8 +25,8 @@ const OneUserProfile: NextPage = ({user}:any) => {
             fullname: fullname,
             surname: surname,
             email: user.email,
-            role_id: role,
-            gender_id: gender,
+            role_id: role_id,
+            gender_id: gender_id,
             timestamp: user.timestamp,
             password: user.password
         });
@@ -56,15 +56,15 @@ const OneUserProfile: NextPage = ({user}:any) => {
             />
             <input 
             type="text" 
-            name="role" 
-            value={role || ''} 
+            name="role_id" 
+            value={role_id || ''} 
             placeholder="Введите роль"
             onChange={(e: any) => setRole(e.target.value)} 
             />
             <input 
             type="text" 
-            name="gender" 
-            value={gender || ''} 
+            name="gender_id" 
+            value={gender_id || ''} 
             placeholder="Введите пол"
             onChange={(e: any) => setGender(e.target.value)} 
             />
