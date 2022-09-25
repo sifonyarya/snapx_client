@@ -1,4 +1,3 @@
-import tw from 'twin.macro';
 import Link from 'next/link';
 import axios, { AxiosResponse } from 'axios';
 import { NextPage } from 'next';
@@ -21,9 +20,6 @@ const UsersSettings: NextPage = () => {
         <>
         <Head><title>Все пользователи</title></Head>
         <ProfileContainers>
-          <Link href="/profile/users">
-            <Back>Назад</Back>
-          </Link>
           {users.map(item=>
           <CardUserProfile users={item} />
           )}
@@ -34,4 +30,3 @@ const UsersSettings: NextPage = () => {
 export default UsersSettings;
 
 
-const Back = tw.a``

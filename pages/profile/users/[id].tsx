@@ -1,3 +1,5 @@
+import tw from 'twin.macro';
+import Link from 'next/link';
 import { NextPage } from 'next';
 import Head from 'next/head';
 import { API_URL } from '../../api/config';
@@ -14,6 +16,9 @@ const OneUserProfile: NextPage = ({user}:any) => {
         <>
         <Head><title>Отдельный пользователь</title></Head>
         <ProfileContainers>
+        <Link href="/profile/users">
+            <Back>Назад</Back>
+          </Link>
             <p>{user.id}</p>
         </ProfileContainers>
         </>
@@ -29,3 +34,5 @@ export async function getServerSideProps({ params }:any) {
       props: { user }
     }
   };
+
+const Back = tw.a``
