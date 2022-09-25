@@ -4,7 +4,7 @@ import Head from 'next/head';
 import { useEffect, useState } from 'react';
 import ProfileContainers from '../../../containers/ProfileContainers';
 import { API_URL } from '../../api/config';
-
+import CardUserProfile from '../../../components/Card_User_Profile/Card_User_Profile';
 
 
 
@@ -21,9 +21,7 @@ const UsersSettings: NextPage = () => {
         <Head><title>Все пользователи</title></Head>
         <ProfileContainers>
           {users.map(item=>
-          <div key={item.id}>
-              <p>{item.email}</p>
-          </div>  
+          <CardUserProfile users={item} />
           )}
         </ProfileContainers>
         </>

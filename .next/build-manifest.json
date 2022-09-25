@@ -30,10 +30,25 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/profile/realty/[id]": [
+    "/catalog/apartments": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/profile/realty/[id].js"
+      "static/chunks/pages/catalog/apartments.js"
+    ],
+    "/profile/ads": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/profile/ads.js"
+    ],
+    "/profile/messages": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/profile/messages.js"
+    ],
+    "/profile/notifications": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/profile/notifications.js"
     ]
   },
   "ampFirstPages": []
