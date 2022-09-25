@@ -22,9 +22,9 @@ const RolesSettings: NextPage = () => {
         <Head><title>Роли пользователей</title></Head>
         <ProfileContainers>
             {roles.map(item=>
-            <div key={item.id}>
+            <a href={`/profile/role/${item.id}`} key={item.id}>
                 <p>{item.name}</p>
-            </div>
+            </a>
             )}
         </ProfileContainers>
         </>
