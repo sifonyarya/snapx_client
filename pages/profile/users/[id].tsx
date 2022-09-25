@@ -30,7 +30,6 @@ const OneUserProfile: NextPage = ({user}:any) => {
             timestamp: user.timestamp,
             password: user.password
         });
-        window.location.reload();
     }
 
     return (
