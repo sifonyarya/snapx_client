@@ -30,7 +30,11 @@ const OneUserProfile: NextPage = ({user}:any) => {
             timestamp: user.timestamp,
             password: user.password
         });
+        setTimeout(() => {
+            window.location.reload();
+        }, 1000);
     }
+
     return (
         <>
         <Head><title>Отдельный пользователь</title></Head>
