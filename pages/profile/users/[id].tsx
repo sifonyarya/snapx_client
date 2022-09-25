@@ -12,7 +12,7 @@ import ProfileContainers from '../../../containers/ProfileContainers';
 const OneUserProfile: NextPage = ({user}:any) => {
     return (
         <>
-        <Head><title>Отдельное объявление</title></Head>
+        <Head><title>Отдельный пользователь</title></Head>
         <ProfileContainers>
             <p>{user.id}</p>
         </ProfileContainers>

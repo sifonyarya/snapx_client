@@ -2,8 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/profile/notifications": "pages/profile/notifications.js",
-  "/": "pages/index.js",
-  "/catalog/apartments": "pages/catalog/apartments.js",
-  "/profile/ads": "pages/profile/ads.js"
+  "/catalog/apartments": "pages/catalog/apartments.js"
 }
