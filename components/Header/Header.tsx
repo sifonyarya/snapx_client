@@ -119,5 +119,5 @@ const IconMenu = tw.ul`flex m-0 p-0 mr-[30px] mt-[16px]`
 const IconItem = tw.li`list-none ml-[20px] relative`
 const IconLink = tw.a`cursor-pointer hover:bg-[#f2313224] text-black pt-[10px] px-[5px] pb-[1px] rounded-full`
 const Point = tw.span`bg-[#f23132] p-[3.5px] absolute rounded-full ml-[-5px]`
-const ButtonLogin = tw.a`text-[14px] my-[10px] mr-[20px] bg-[#f23132] py-[7px] px-[20px] rounded-[5px]`
-const ButtonRegistration = tw.a`text-[14px] my-[10px] bg-[#f23132] py-[7px] px-[20px] rounded-[5px]`
+const ButtonLogin = tw.a`text-[14px] my-[10px] mr-[20px] bg-[#f23132] py-[7px] px-[20px] rounded-[5px] cursor-pointer text-white`
+const ButtonRegistration = tw.a`text-[14px] my-[10px] bg-[#f23132] py-[7px] px-[20px] rounded-[5px] cursor-pointer text-white`
