@@ -28,4 +28,4 @@ const Input: React.FC<InputInterface> = (props) => {
 }
 export default Input;
 
-const InputBlock = tw.input`block w-full rounded-sm border-[1px] py-[8px] px-[13px] bg-white outline-none text-black`
+const InputBlock = tw.input`block w-full rounded-sm border-[1px] py-[10px] px-[15px] bg-white outline-none text-black border-solid border-[#d4d4d4] mb-[10px] rounded-[8px] text-[14px]`
