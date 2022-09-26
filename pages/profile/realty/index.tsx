@@ -26,9 +26,10 @@ const RealtySetting: NextPage = () => {
         <Head><title>Настройка недвижимости</title></Head>
         <ProfileContainers>
          {realty.map(item=>
-         <Card_Realty_Profile realty={item} />
+         {email_user == item.email &&
+            <Card_Realty_Profile realty={item} />
+         }
         )}
-        {email_user}
         </ProfileContainers>
         </>
     )
