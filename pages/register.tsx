@@ -19,7 +19,7 @@ const RegisterPage: NextPage = () => {
         <Head><title>Регистрация</title></Head>
         <MainComponents>
             <RegistrationContainer>
-                    <Title>Авторизация пользователя</Title>
+                    <Title>Регистрация пользователя</Title>
                     <RegistrationBlock>
                         <Input
                             id="user_email"
