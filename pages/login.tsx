@@ -51,4 +51,4 @@ const LoginPage: NextPage = () => {
 export default LoginPage;
 
 const LoginBlock = tw.div`w-[30%] block mx-auto`;
-const Login = tw.button`block w-full`;
+const Login = tw.button`block w-[80%] bg-[#f23132] mx-auto mt-[15px] py-[10px] border-none text-white text-[15px] rounded-[5px]`;
