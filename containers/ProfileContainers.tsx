@@ -4,7 +4,7 @@ import Footer from '../components/Footer/Footer';
 import ProfileBlockLeft from '../components/ProfileBlockLeft/ProfileBlockLeft';
 import MenuProfileMobile from '../components/MenuProfileMobile/MenuProfileMobile';
 import { useRouter } from 'next/router';
-import { useContext, useEffect } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { Context } from '../pages/_app';
 
 
@@ -12,6 +12,7 @@ interface Children {}
 
 const ProfileContainers: React.FC<Children> = ({children}:any) => {
     const { store } = useContext(Context);
+    const [isLoading, setLoading] = useState(true);
     const router = useRouter();
     useEffect(() => {
       setTimeout(() => {
@@ -23,6 +24,8 @@ const ProfileContainers: React.FC<Children> = ({children}:any) => {
       [];
     return (
         <>
+        {isLoading == true ? <div>dsdsaad</div> : 
+        <>
         <Header />
         <Container>
             <ProfileBlockLeft />
@@ -32,6 +35,7 @@ const ProfileContainers: React.FC<Children> = ({children}:any) => {
             </RightBlock>
         </Container>
         <Footer/>
+        </>}
         </>
     )
 }
