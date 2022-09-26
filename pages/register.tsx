@@ -16,7 +16,7 @@ const RegisterPage: NextPage = () => {
     const { store } = useContext(Context);
     return (
         <>
-        <Head><title>Регистрация</title></Head>
+        <Head><title>Регистрация пользователя</title></Head>
         <MainComponents>
             <RegistrationContainer>
                     <Title>Регистрация пользователя</Title>

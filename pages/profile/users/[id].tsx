@@ -6,8 +6,7 @@ import { API_URL } from '../../api/config';
 import ProfileContainers from '../../../containers/ProfileContainers';
 import { useState } from 'react';
 import axios from 'axios';
-
-
+import Input from '../../../components/Input/Input';
 
 
 
@@ -42,28 +41,28 @@ const OneUserProfile: NextPage = ({user}:any) => {
         <Link href="/profile/users">
             <Back>Назад</Back>
           </Link>
-            <input 
+            <Input 
             type="text" 
             name="fullname" 
             value={fullname || ''} 
             placeholder="Введите ваше имя"
             onChange={(e: any) => setFullname(e.target.value)} 
             />
-            <input 
+            <Input 
             type="text" 
             name="surname" 
             value={surname || ''} 
             placeholder="Введите ваше имя"
             onChange={(e: any) => setSurname(e.target.value)} 
             />
-            <input 
+            <Input 
             type="text" 
             name="role_id" 
             value={role_id || ''} 
             placeholder="Введите роль"
             onChange={(e: any) => setRole(e.target.value)} 
             />
-            <input 
+            <Input 
             type="text" 
             name="gender_id" 
             value={gender_id || ''} 
