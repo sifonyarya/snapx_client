@@ -21,11 +21,15 @@ const LoginProfileHeader: React.FC = () => {
         setProf(false)
       }
       useEffect(() => {
+       try {
         axios.get(API_URL + '/users/' + localStorage.getItem('user_id'))
-            .then((response: AxiosResponse) => {
-                setFullName(response.data.fullname);
-                setSurName(response.data.surname);
-            });
+        .then((response: AxiosResponse) => {
+            setFullName(response.data.fullname);
+            setSurName(response.data.surname);
+        });
+       } catch (error) {
+        
+       }
       }, [])
     return (
         <>
