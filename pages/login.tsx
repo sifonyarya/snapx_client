@@ -42,7 +42,7 @@ const LoginPage: NextPage = () => {
                         value={user_password}
                         onChange={(e: any) => setPassword(e.target.value)}
                     />
-                    <button onClick={() => store.login(user_email, user_password)}>Войти</button>
+                    <Login onClick={() => store.login(user_email, user_password)}>Войти</Login>
                 </LoginBlock>
             </MainComponents>
         </>
@@ -50,4 +50,5 @@ const LoginPage: NextPage = () => {
 }
 export default LoginPage;
 
-const LoginBlock = tw.div`w-[30%] block mx-auto`
+const LoginBlock = tw.div`w-[30%] block mx-auto`;
+const Login = tw.button`block w-full`;
