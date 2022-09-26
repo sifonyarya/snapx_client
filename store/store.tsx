@@ -22,7 +22,7 @@ export default class Store {
         localStorage.setItem('token', response.data.accessToken);
         localStorage.setItem('role', response.data.role);
         localStorage.setItem('user_id', response.data.user_id);
-        this.setAuth(false);
+        this.setAuth(true);
     }
     async register(user_email: string,user_password: string) {
         try {
