@@ -53,7 +53,7 @@ const LoginPage: NextPage = () => {
 }
 export default LoginPage;
 
-const LoginContainer = tw.div`py-[50px]`
+const LoginContainer = tw.div`py-[150px]`
 const Title = tw.h1`text-center`
 const LoginBlock = tw.div`w-[30%] block mx-auto`;
 const Login = tw.button`block w-[80%] bg-[#f23132] mx-auto mt-[15px] py-[10px] border-none text-white text-[15px] rounded-[5px] cursor-pointer hover:shadow-md duration-200 hover:duration-200 hover:bg-[#df2b2c]`;
