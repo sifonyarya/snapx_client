@@ -1,3 +1,5 @@
+import axios, { AxiosResponse } from "axios";
+import { useEffect, useState } from "react";
 import { API_URL } from "../../pages/api/config";
 
 
@@ -18,12 +20,22 @@ const Card_Realty_Profile: React.FC<Props> = ({realty}:any) => {
         });
         window.location.reload();
     }
+    const [email_user, setEmailUser] = useState();
+    useEffect(() => {
+        const id = localStorage.getItem('user_id')
+        axios.get(API_URL + '/users/' + id)
+            .then((response: AxiosResponse) => {
+                setEmailUser(response.data.email);
+            });
+    }, []);
     return (
         <>
+        {email_user == realty.email &&
         <a href={`/profile/realty/${realty.id}`} key={realty.id}>
-            <p>{realty.email}</p>
-            <button onClick={() => deleteQ(realty.id)}>Удалить</button>
-        </a>
+        <p>{realty.email}</p>
+        <button onClick={() => deleteQ(realty.id)}>Удалить</button>
+         </a>
+        }
         </>
     )
 }
