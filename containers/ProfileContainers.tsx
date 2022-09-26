@@ -13,6 +13,9 @@ interface Children {}
 const ProfileContainers: React.FC<Children> = ({children}:any) => {
     const { store } = useContext(Context);
     const [isLoading, setLoading] = useState(true);
+    setTimeout(() => {
+        setLoading(false);
+    }, 1000);
     const router = useRouter();
     useEffect(() => {
       setTimeout(() => {
