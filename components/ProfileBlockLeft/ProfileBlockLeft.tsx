@@ -163,11 +163,6 @@ const ProfileBlockLeft: React.FC = () => {
                 </Link>
             </Item>
             <Item>
-                <Link href="/profile/proflle">
-                    <LinkButton style={router.pathname == `/profile/proflle` ? { backgroundColor: '#f23132', color: 'white', boxShadow: 'var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)' } : {}}>Настройки</LinkButton>
-                </Link>
-            </Item>
-            <Item>
                 <Link href="/profile/realty">
                     <LinkButton style={router.pathname == `/profile/realty` ? { backgroundColor: '#f23132', color: 'white', boxShadow: 'var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)' } : {}}>Недвижимость</LinkButton>
                 </Link>
