@@ -9,10 +9,16 @@ import Card_Realty_Profile from '../../../components/Card_Realty_Profile/Card_Re
 
 const RealtySetting: NextPage = () => {
     const [realty, setRealty] = useState<any[]>([]);
+    const [email_user, setEmailUser] = useState();
     useEffect(() => {
         axios.get(API_URL + '/realty')
             .then((response: AxiosResponse) => {
                 setRealty(response.data);
+            });
+        const id = localStorage.getItem('user_id')
+        axios.get(API_URL + '/users/' + id)
+            .then((response: AxiosResponse) => {
+                setEmailUser(response.data.email);
             });
     }, []);
     return (
@@ -22,6 +28,7 @@ const RealtySetting: NextPage = () => {
          {realty.map(item=>
          <Card_Realty_Profile realty={item} />
         )}
+        {email_user}
         </ProfileContainers>
         </>
     )
