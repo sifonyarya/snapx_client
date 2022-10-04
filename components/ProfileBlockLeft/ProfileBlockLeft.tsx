@@ -164,7 +164,7 @@ const ProfileBlockLeft: React.FC = () => {
             </Item>
             <Item>
                 <Link href="/profile/realty">
-                    <LinkButton style={router.pathname == `/profile/realty` ? { backgroundColor: '#f23132', color: 'white', boxShadow: 'var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)' } : {}}>Недвижимость</LinkButton>
+                    <LinkButton style={router.pathname == `/profile/realty` || router.pathname == `/profile/realty/[id]` || router.pathname == `/profile/realty/create` ? { backgroundColor: '#f23132', color: 'white', boxShadow: 'var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)' } : {}}>Недвижимость</LinkButton>
                 </Link>
             </Item>
         </Menu>

@@ -89,7 +89,7 @@ const Header: React.FC = () => {
                                         </Link>
                                     </IconItem>
                                 </IconMenu>
-                                <Link href="/profile/ads/create">
+                                <Link href="/profile/realty/create">
                                     <SendAds>Подать объявление</SendAds>
                                 </Link>
                                 <Link href="/profile/ads/create">
