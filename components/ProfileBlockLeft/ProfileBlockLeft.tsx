@@ -153,7 +153,7 @@ const ProfileBlockLeft: React.FC = () => {
                 <Link href="/profile/favourites">
                     <LinkButton
                         style={router.pathname == `/profile/favourites` ? { backgroundColor: '#f23132', color: 'white', boxShadow: 'var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)' } : {}}
-                    >Избранное
+                    >Избранное1
                     </LinkButton>
                 </Link>
             </Item>
@@ -167,7 +167,7 @@ const ProfileBlockLeft: React.FC = () => {
                     <LinkButton style={router.pathname == `/profile/realty` || router.pathname == `/profile/realty/[id]` || router.pathname == `/profile/realty/create` ? { backgroundColor: '#f23132', color: 'white', boxShadow: 'var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)' } : {}}>Недвижимость</LinkButton>
                 </Link>
             </Item>
-            
+
         </Menu>
             }
         </ProfileBlock>
