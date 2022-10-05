@@ -153,7 +153,7 @@ const ProfileBlockLeft: React.FC = () => {
                 <Link href="/profile/favourites">
                     <LinkButton
                         style={router.pathname == `/profile/favourites` ? { backgroundColor: '#f23132', color: 'white', boxShadow: 'var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)' } : {}}
-                    >Избранное1
+                    >Избранное
                     </LinkButton>
                 </Link>
             </Item>
